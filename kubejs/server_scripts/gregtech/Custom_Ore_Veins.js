@@ -25,9 +25,9 @@ vein.addIndicator(/* ... *//*)
 
 GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:overworld/uraninite", vein => {
-        vein.weight(30)
+        vein.weight(20)
         vein.clusterSize(30)
-        vein.density(0.8)
+        vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
@@ -42,9 +42,9 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     event.add("kubejs:overworld/tetrahedrite", vein => {
-        vein.weight(40)
+        vein.weight(30)
         vein.clusterSize(30)
-        vein.density(0.8)
+        vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
@@ -65,7 +65,6 @@ GTCEuServerEvents.oreVeins(event => {
 
 GTCEuServerEvents.oreVeins(event => {
     event.modifyAll((id, vein) => {
-        vein.density(0.8)
         vein.discardChanceOnAirExposure(0.3)
     })
 
